@@ -70,6 +70,10 @@ const courses = {
 app.use(express.json());
 
 // Define your static endpoints
+app.get('/courses', (req, res) => {
+  res.json(courses);
+});
+
 app.get('/courses/:stage', (req, res) => {
   const { stage } = req.params;
 
