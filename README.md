@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/yZWC7OmO)
 # EduKids Website
-![EduKids Logo](./assets/images/logo.png)
+![EduKids Logo](./images/logo.png)
 
 EduKids adalah platform pembelajaran online yang menyediakan beragam kursus, seperti matematika, sains, IPS, dan banyak lagi. Kami telah merancang platform ini dengan tujuan memberikan pendidikan berkualitas tinggi yang juga terjangkau bagi anak-anak dari segala usia. Kursus-kursus kami dirancang agar menarik dan interaktif, dengan tim guru berpengalaman yang selalu siap membantu dan mendukung anak-anak dalam setiap langkah pembelajarannya.
 
