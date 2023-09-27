@@ -1,31 +1,21 @@
 {
-  "name": "package.json",
+  "name": "clinic-booking-app-backend",
   "version": "1.0.0",
-  "description": "EduKids adalah platform pembelajaran online yang menyediakan beragam kursus, termasuk matematika, sains, IPS, dan banyak lagi. Kami telah merancang platform ini dengan tujuan memberikan pendidikan berkualitas tinggi yang juga terjangkau bagi anak-anak dari segala usia. Kursus-kursus kami dirancang agar menarik dan interaktif, dengan tim guru berpengalaman yang selalu siap membantu dan mendukung anak-anak dalam setiap langkah pembelajarannya.",
+  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kampus-Merdeka-Software-Engineering/back-end-capstone-project-section-semarang-group-16.git"
-  },
-  "keywords": [
-    "online",
-    "learning",
-    "education",
-    "courses",
-    "e-learning",
-    "children"
-  ],
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Kampus-Merdeka-Software-Engineering/back-end-capstone-project-section-semarang-group-16/issues"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.1",
+    "sequelize": "^6.33.0"
   },
-  "homepage": "https://github.com/Kampus-Merdeka-Software-Engineering/back-end-capstone-project-section-semarang-group-16#readme",
   "devDependencies": {
-    "express": "^4.18.2"
+    "nodemon": "^3.0.1"
   }
 }
