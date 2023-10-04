@@ -12,7 +12,7 @@ const faqRoutes = require('./route/faqRoute.js');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-//Untuk mengizinkan request berupa json
+//berfungsi mengizinkan request berupa json
 app.use(express.json());
 
 app.use(cors());
