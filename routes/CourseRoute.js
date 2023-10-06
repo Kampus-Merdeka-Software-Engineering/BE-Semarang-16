@@ -1,6 +1,6 @@
 import express from "express";
 import {createCourse
-} from "../controllers/CourseControllers.js";
+} from "../controllers/CourseController.js";
 
 const router = express.Router();
 

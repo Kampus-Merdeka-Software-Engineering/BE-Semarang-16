@@ -1,19 +1,17 @@
-import { DataTypes } from "sequelize";
+const DataTypes = require('sequelize');
 import coursedb from "../config/Database.js";
 
 
 const User = coursedb.define("User", {
   
-  userid: {
-    type: DataTypes.STRING,
+  user_id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
     },
   username: {
     type: DataTypes.STRING,
-    len : [3,12]
-  },
-  name: {
-    type: DataTypes.STRING,
-    len : [3,100]
+    len : [3,15]
   },
   email: {
     type: DataTypes.STRING,

@@ -1,16 +1,18 @@
-import {DataTypes} from "sequelize"
+import { Sequelize } from "sequelize";
 import coursedb from "../config/Database.js";
 
 
 const course = coursedb.define("course", {
   
-  courseid: {
+  course_id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+  course_name: {
     type: DataTypes.STRING,
   },
-  coursetype: {
-    type: DataTypes.STRING,
-  },
-  courselevel: {
+  course_category: {
     type: DataTypes.STRING,
   }
 });
