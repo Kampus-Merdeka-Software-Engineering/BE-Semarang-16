@@ -1,11 +1,9 @@
-import { Sequelize } from "sequelize";
+import { Sequelize, DataTypes } from "sequelize"; // Impor DataTypes dari Sequelize
 import coursedb from "../config/Database.js";
 
-
 const course = coursedb.define("course", {
-  
   course_id: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.INTEGER, // Gunakan DataTypes.INTEGER bukan DataTypes.INT
     primaryKey: true,
     autoIncrement: true,
   },
@@ -19,8 +17,7 @@ const course = coursedb.define("course", {
 
 export default course;
 
-// kalau table course nggaada dibuat pakai ini
-
+// Jika tabel "course" tidak ada, buat tabel menggunakan ini
 (async () => {
   await coursedb.sync();
 })();

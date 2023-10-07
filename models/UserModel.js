@@ -1,32 +1,32 @@
-const DataTypes = require('sequelize');
+import { Sequelize, DataTypes } from "sequelize"; // Impor DataTypes dari Sequelize
 import coursedb from "../config/Database.js";
 
-
 const User = coursedb.define("User", {
-  
   user_id: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.INTEGER, // Perbaiki DataTypes.INT menjadi DataTypes.INTEGER
     primaryKey: true,
     autoIncrement: true,
-    },
+  },
   username: {
     type: DataTypes.STRING,
-    len : [3,15]
+    validate: {
+      len: [3, 15], // Menggunakan validate untuk memeriksa panjang username
+    },
   },
   email: {
     type: DataTypes.STRING,
-    isEmail: true
+    validate: {
+      isEmail: true, // Menggunakan validate untuk memeriksa email
+    },
   },
   password: {
     type: DataTypes.STRING,
   },
 });
 
-
 export default User;
 
-// kalau belum ada table patient, di buat pakai ini
-
+// Jika tabel "User" tidak ada, buat tabel menggunakan ini
 (async () => {
-  await coursedb.sync();
+  await User.sync();
 })();
