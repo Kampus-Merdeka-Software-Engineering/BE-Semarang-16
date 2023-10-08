@@ -3,7 +3,7 @@ import coursedb from "../config/Database.js";
 
 const User = coursedb.define("User", {
   user_id: {
-    type: DataTypes.INTEGER, // Perbaiki DataTypes.INT menjadi DataTypes.INTEGER
+    type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
   },

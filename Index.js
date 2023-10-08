@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import UserRoute from "./routes/UserRoute.js";
 import CourseRoute from "./routes/CourseRoute.js";
 import TutorRoute from "./routes/TutorRoute.js";
+import FaqRoute from "./routes/FaqRoute.js";
 import cors from "cors";
 
 dotenv.config();
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(CourseRoute);
 app.use(UserRoute);
 app.use(TutorRoute);
+app.use(FaqRoute);
 
 
 app.listen(process.env.PORT||3000, () => {
