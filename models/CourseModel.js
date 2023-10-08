@@ -3,7 +3,7 @@ import coursedb from "../config/Database.js";
 
 const course = coursedb.define("course", {
   course_id: {
-    type: DataTypes.INTEGER, // Gunakan DataTypes.INTEGER bukan DataTypes.INT
+    type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
   },
@@ -13,6 +13,11 @@ const course = coursedb.define("course", {
   course_category: {
     type: DataTypes.STRING,
   }
+},
+{
+  timestamps: true, 
+  createdAt: 'createdAt', 
+  updatedAt: 'updatedAt', 
 });
 
 export default course;
