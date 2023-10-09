@@ -6,11 +6,10 @@ const db = new Sequelize("railway", "root", "Jvpa4qYS1iYerGp6Ieu1", {
   dialect: "mysql",
 });
 
-coursedb
-  .authenticate()
+db.authenticate()
   .then(() => console.log("Database connected"))
   .catch((error) => {
     console.log(`Unable to connect to database: ${error}`);
   });
 
-export default coursedb;
+export default db;
