@@ -1,16 +1,14 @@
-import "dotenv/config";
 import { Sequelize } from "sequelize";
 
-const coursedb = new Sequelize(
-  {
-    username : process.env.MYSQLUSER,
-    password: process.env.MYSQLPASSWORD,
-    database: process.env.MYSQLDATABASE,
-    host: process.env.MYSQLHOST,
-    port: process.env.MYSQLPORT,
+const db = new Sequelize(
+  "railway", 
+  "root",
+  "jv2Ko94DFoyoz1CgVAJd",
+      {
+    host : "containers-us-west-51.railway.app",
+    port:"5777",
     dialect: "mysql",
-  }
-  );
+});
 
 coursedb.authenticate()
   .then(() => console.log("Database connected"))
@@ -19,4 +17,3 @@ coursedb.authenticate()
   });
 
 export default coursedb;
-
