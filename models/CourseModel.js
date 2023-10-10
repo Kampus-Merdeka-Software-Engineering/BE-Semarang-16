@@ -1,7 +1,7 @@
 import { Sequelize, DataTypes } from "sequelize"; // Impor DataTypes dari Sequelize
 import db from "../config/Database.js";
 
-const Course = db.define("course", {
+const Course = db.define("courses", {
   course_id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
