@@ -15,11 +15,12 @@ const course = db.define("course", {
   },
   course_level: {
     type: DataTypes.STRING,
-  });
+  },
+});
 
 export default course;
 
 // Jika tabel "course" tidak ada, buat tabel menggunakan ini
 (async () => {
-  await coursedb.sync();
+  await db.sync();
 })();
