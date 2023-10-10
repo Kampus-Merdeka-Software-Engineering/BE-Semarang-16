@@ -11,7 +11,7 @@ export const createCourse = async (req, res) => {
 
 export const getCoursefromUser = async (req, res) => {
   try {
-    const course = await course.findAll();
+    const course = await Course.findAll();
 
     res.status(200).json(course);
   } catch (error) {
