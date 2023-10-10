@@ -18,7 +18,7 @@ const course = db.define("course", {
   },
 });
 
-export default course;
+export default Course;
 
 // Jika tabel "course" tidak ada, buat tabel menggunakan ini
 (async () => {
