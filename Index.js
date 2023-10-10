@@ -1,25 +1,18 @@
 import express from "express";
-import dotenv from "dotenv";
-import UserRoute from "./routes/UserRoute.js";
 import CourseRoute from "./routes/CourseRoute.js";
 import TutorRoute from "./routes/TutorRoute.js";
 import FaqRoute from "./routes/FaqRoute.js";
 import cors from "cors";
 
-dotenv.config();
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 const app = express();
-
 
 app.use(express.json());
 app.use(cors());
 
-
-app.use(CourseRoute);
-app.use(UserRoute);
-app.use(TutorRoute);
-app.use(FaqRoute);
-
+app.use("/courses", CourseRoute);
+app.use("/tutor", TutorRoute);
+app.use("/faq", FaqRoute);
 
 app.listen(PORT, "0.0.0.0", function() {} );
