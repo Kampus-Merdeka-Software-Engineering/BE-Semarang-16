@@ -28,3 +28,6 @@ Buka situs pada link berikut - klik link : <br><br>
 
 ## 🤗 Tim Pengembangan
 Grup 16 section Semarang( [RevoU](https://revou.co/) x [MSIB Kemendikbudristek](https://www.kemdikbud.go.id/) ).
+
+# Link QA
+https://docs.google.com/spreadsheets/d/1SvfxynYa6fv6vyKeaYz05FPG7RkPLK2bDuh6h8BMiCU/edit#gid=0
