@@ -1,7 +1,7 @@
 import { Sequelize, DataTypes } from "sequelize"; // Impor DataTypes dari Sequelize
-import coursedb from "../config/Database.js";
+import db from "../config/Database.js";
 
-const course = coursedb.define("course", {
+const course = db.define("course", {
   course_id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -12,13 +12,10 @@ const course = coursedb.define("course", {
   },
   course_category: {
     type: DataTypes.STRING,
-  }
-},
-{
-  timestamps: true, 
-  createdAt: 'createdAt', 
-  updatedAt: 'updatedAt', 
-});
+  },
+  course_level: {
+    type: DataTypes.STRING,
+  });
 
 export default course;
 
