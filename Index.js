@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/courses", CourseRoute);
+app.use("/course", CourseRoute);
 app.use("/tutor", TutorRoute);
 app.use("/faq", FaqRoute);
 
