@@ -1,9 +1,19 @@
-import coursedb from "../models/CourseModel.js";
+import Course from "../models/CourseModel.js";
 
-export const createCourse= async (req, res) => {
+export const createCourse = async (req, res) => {
   try {
-    await coursedb.create(req.body);
-    res.status(201).json({ msg: "course created" });
+    await Course.create(req.body);
+    res.status(201).json({ msg: "Course created" });
+  } catch (error) {
+    res.send(error.message);
+  }
+};
+
+export const getCoursefromUser = async (req, res) => {
+  try {
+    const course = await course.findAll();
+
+    res.status(200).json(course);
   } catch (error) {
     res.send(error.message);
   }
